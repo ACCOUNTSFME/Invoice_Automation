@@ -85,10 +85,9 @@
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Main sequence of the entire process. Hello Testing" DisplayName="Master Sequence" sap:VirtualizedContainerService.HintSize="633.333333333333,1964.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_7">
+  <Sequence sap2010:Annotation.AnnotationText="Main sequence of the entire process." DisplayName="Master Sequence" sap:VirtualizedContainerService.HintSize="633.333333333333,1964.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_7">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" sap2010:Annotation.AnnotationText="Encrypts password into PwD. " Name="PwD" />
       <Variable x:TypeArguments="s:String[]" Name="FileDirectory" />
