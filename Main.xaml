@@ -195,7 +195,7 @@
         <OutArgument x:TypeArguments="s:String[]">[FileDirectory]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="s:String[]">[directory.GetFiles("\\192.168.1.251\Hamachi\G INVOICE\2021\202107 JULY")]</InArgument>
+        <InArgument x:TypeArguments="s:String[]">[directory.GetFiles("\\192.168.1.251\Hamachi\G INVOICE\2021\202106 JUNE")]</InArgument>
       </Assign.Value>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -215,7 +215,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:SendMail From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" sap2010:Annotation.AnnotationText="Send email together with attachements. " AttachmentsCollection="[Directory.GetFiles(&quot;\\192.168.1.251\Hamachi\G INVOICE\2021\202107 JULY\&quot; + EmailRow(&quot;Customer Name&quot;).ToString)]" Bcc="[EmailRow(&quot;Customer BCC&quot;).ToString]" Body="[String.Format(Master(&quot;Body&quot;).ToString, EmailRow(&quot;Staff Name&quot;).ToString)]" Cc="[EmailRow(&quot;Customer CC&quot;).ToString]" DisplayName="Send SMTP Mail Message" Email="accounts@foresight.com.sg" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,180" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Password="[PwD]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[String.Format(Master(&quot;Subject&quot;).ToString)]" To="[EmailRow(&quot;Customer Email&quot;).ToString]">
+            <ui:SendMail Bcc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" sap2010:Annotation.AnnotationText="Send email together with attachements. " AttachmentsCollection="[Directory.GetFiles(&quot;\\192.168.1.251\Hamachi\G INVOICE\2021\202106 JUNE\&quot; + EmailRow(&quot;Customer Name&quot;).ToString)]" Body="[String.Format(Master(&quot;Body&quot;).ToString, EmailRow(&quot;Staff Name&quot;).ToString)]" Cc="[EmailRow(&quot;Customer CC&quot;).ToString]" DisplayName="Send SMTP Mail Message" Email="accounts@foresight.com.sg" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,180" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Password="[PwD]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[String.Format(Master(&quot;Subject&quot;).ToString)]" To="[EmailRow(&quot;Customer Email&quot;).ToString]">
               <ui:SendMail.Files>
                 <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4" />
               </ui:SendMail.Files>
