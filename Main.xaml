@@ -8,7 +8,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>623.333333333333,2029.33333333333</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>796,2128</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="37">
@@ -88,7 +88,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Main sequence of the entire process." DisplayName="Master Sequence" sap:VirtualizedContainerService.HintSize="633.333333333333,1964.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_7">
+  <Sequence sap2010:Annotation.AnnotationText="Main sequence of the entire process." DisplayName="Master Sequence" sap:VirtualizedContainerService.HintSize="631.2,1963.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" sap2010:Annotation.AnnotationText="Encrypts password into PwD. " Name="PwD" />
       <Variable x:TypeArguments="s:String[]" Name="FileDirectory" />
@@ -102,25 +102,25 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="Reading the excel file where it is available. " DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="591.333333333333,1067.33333333333" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="\\192.168.1.251\Hamachi\RPA\FME CUSTOMER INVOICE EMAIL LIST 2021.xlsx">
+    <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="Reading the excel file where it is available. " DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="589.6,1070.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="\\192.168.1.251\Hamachi\RPA\FME CUSTOMER INVOICE EMAIL LIST 2021.xlsx">
       <ui:ExcelApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="557.333333333333,928" sap2010:WorkflowViewState.IdRef="Sequence_13">
+          <Sequence sap:VirtualizedContainerService.HintSize="556,929.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="515.333333333333,836" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="514.4,836.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:ExcelReadRange AddHeaders="True" sap2010:Annotation.AnnotationText="Reading the ENTIRE worksheet of &quot;SendEmailMaster&quot; and storing it into a datatable called &quot;MasterDT&quot;" DataTable="[MasterDT]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="473.333333333333,104" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="SendInvoiceMaster">
+              <ui:ExcelReadRange AddHeaders="True" sap2010:Annotation.AnnotationText="Reading the ENTIRE worksheet of &quot;SendEmailMaster&quot; and storing it into a datatable called &quot;MasterDT&quot;" DataTable="[MasterDT]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="472.8,104" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="SendInvoiceMaster">
                 <ui:ExcelReadRange.Range>
                   <InArgument x:TypeArguments="x:String">
                     <Literal x:TypeArguments="x:String" Value="" />
@@ -132,26 +132,26 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:ExcelReadRange>
-              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="The program will go through each row in MasterDT." DataTable="[MasterDT]" DisplayName="For Each Row in MasterDT" sap:VirtualizedContainerService.HintSize="473.333333333333,600" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="The program will go through each row in MasterDT." DataTable="[MasterDT]" DisplayName="For Each Row in MasterDT" sap:VirtualizedContainerService.HintSize="472.8,600" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                 <ui:ForEachRow.Body>
                   <ActivityAction x:TypeArguments="sd:DataRow">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="sd:DataRow" Name="MasterRow" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="439.333333333333,448.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="439.2,448" sap2010:WorkflowViewState.IdRef="Sequence_6">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <maes:AddToDictionary x:TypeArguments="x:String, x:String" sap2010:Annotation.AnnotationText="Key - Everything under the column 'Title' will be the Key &#xA;(e.g. To, Subject &amp; Body). &#xA;&#xA;Value - Everything under the column 'Details' will be the Value." Dictionary="[Master]" DisplayName="Add to dictionary" sap:VirtualizedContainerService.HintSize="397.333333333333,212.666666666667" sap2010:WorkflowViewState.IdRef="AddToDictionary`2_1" Key="[MasterRow(&quot;Title&quot;).ToString]" Value="[MasterRow(&quot;Details&quot;).ToString]">
+                      <maes:AddToDictionary x:TypeArguments="x:String, x:String" sap2010:Annotation.AnnotationText="Key - Everything under the column 'Title' will be the Key &#xA;(e.g. To, Subject &amp; Body). &#xA;&#xA;Value - Everything under the column 'Details' will be the Value." Dictionary="[Master]" DisplayName="Add to dictionary" sap:VirtualizedContainerService.HintSize="397.6,211.2" sap2010:WorkflowViewState.IdRef="AddToDictionary`2_1" Key="[MasterRow(&quot;Title&quot;).ToString]" Value="[MasterRow(&quot;Details&quot;).ToString]">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </maes:AddToDictionary>
-                      <ui:ExcelReadRange AddHeaders="True" sap2010:Annotation.AnnotationText="Reading the ENTIRE worksheet of &quot;CustomerEmailList&quot; and storing it into a datatable called &quot;EmailListDT&quot;" DataTable="[EmailListDT]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="397.333333333333,104" sap2010:WorkflowViewState.IdRef="ExcelReadRange_2" SheetName="CustomerEmailList">
+                      <ui:ExcelReadRange AddHeaders="True" sap2010:Annotation.AnnotationText="Reading the ENTIRE worksheet of &quot;CustomerEmailList&quot; and storing it into a datatable called &quot;EmailListDT&quot;" DataTable="[EmailListDT]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="397.6,104" sap2010:WorkflowViewState.IdRef="ExcelReadRange_2" SheetName="CustomerEmailList">
                         <ui:ExcelReadRange.Range>
                           <InArgument x:TypeArguments="x:String">
                             <Literal x:TypeArguments="x:String" Value="" />
@@ -184,19 +184,19 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ExcelApplicationScope>
-    <ui:GetPassword sap2010:Annotation.AnnotationText="Encrypts the password. " DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="591.333333333333,52.6666666666667" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0iAkureXEku+EBIsIoMMKgAAAAACAAAAAAAQZgAAAAEAACAAAADc6yU8DKhxeIHDUAsMQby5SpXRa3OV6CmavkiS/88/WwAAAAAOgAAAAAIAACAAAACizKu2oJIv1M+FfiED8pQXoRejzKxM+SsaYoq6mVPgnhAAAAD5e8PME3N724bGL3RPa104QAAAAEGeM+5WGiv23w19ElqMSH8zlY6aFMYe9O+EkhDoMj0dWrCiquKXPib0HVs7f9E08o14lsLc/AOPyMokizxc4Yk=" Result="[PwD]">
+    <ui:GetPassword sap2010:Annotation.AnnotationText="Encrypts the password. " DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="589.6,53.6" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAWPyorORWBUOTQTuXnsnCggAAAAACAAAAAAAQZgAAAAEAACAAAABMuzKNQNrEf3J2RVHe17OY8eEmz9RObZ4LecptzXQ21wAAAAAOgAAAAAIAACAAAAB2NzcwsEe/vHcPUuJdVNnR/dHK9JnUqoeKUgr+16r1ORAAAADMzjUSGbaVOqMg/h8wL5VfQAAAAK1TvRBGqlqNIOj7akgvYPjnf0MwnYWWrQf8ycY3fIytZXjhUtpMmxUQ13pk9Py0nRCk8peAaxtI6Q+MdNO74Vk=" Result="[PwD]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:GetPassword>
-    <Assign sap2010:Annotation.AnnotationText="Get the attachments from HAMACHI - INVOICE " sap:VirtualizedContainerService.HintSize="591.333333333333,107.333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap2010:Annotation.AnnotationText="Get the attachments from HAMACHI - INVOICE " sap:VirtualizedContainerService.HintSize="589.6,104" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="s:String[]">[FileDirectory]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="s:String[]">[directory.GetFiles("\\192.168.1.251\Hamachi\G INVOICE\2021\202106 JUNE")]</InArgument>
+        <InArgument x:TypeArguments="s:String[]">[directory.GetFiles("\\192.168.1.251\Hamachi\G INVOICE\2021\202107 JULY")]</InArgument>
       </Assign.Value>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -204,19 +204,19 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[EmailListDT]" DisplayName="For Each Row in EmailListDT " sap:VirtualizedContainerService.HintSize="591.333333333333,396" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[EmailListDT]" DisplayName="For Each Row in EmailListDT " sap:VirtualizedContainerService.HintSize="589.6,391.2" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="EmailRow" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,272" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="375.2,270.4" sap2010:WorkflowViewState.IdRef="Sequence_10">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:SendMail Bcc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" sap2010:Annotation.AnnotationText="Send email together with attachements. " AttachmentsCollection="[Directory.GetFiles(&quot;\\192.168.1.251\Hamachi\G INVOICE\2021\202106 JUNE\&quot; + EmailRow(&quot;Customer Name&quot;).ToString)]" Body="[String.Format(Master(&quot;Body&quot;).ToString, EmailRow(&quot;Staff Name&quot;).ToString)]" Cc="[EmailRow(&quot;Customer CC&quot;).ToString]" DisplayName="Send SMTP Mail Message" Email="accounts@foresight.com.sg" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,180" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Password="[PwD]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[String.Format(Master(&quot;Subject&quot;).ToString)]" To="[EmailRow(&quot;Customer Email&quot;).ToString]">
+            <ui:SendMail Bcc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" sap2010:Annotation.AnnotationText="Send email together with attachements. " AttachmentsCollection="[Directory.GetFiles(&quot;\\192.168.1.251\Hamachi\G INVOICE\2021\202107 JULY\&quot; + EmailRow(&quot;Customer Name&quot;).ToString)]" Body="[String.Format(Master(&quot;Body&quot;).ToString, EmailRow(&quot;Staff Name&quot;).ToString)]" Cc="[EmailRow(&quot;Customer CC&quot;).ToString]" DisplayName="Send SMTP Mail Message" Email="accounts@foresight.com.sg" EnableSSL="True" sap:VirtualizedContainerService.HintSize="333.6,177.6" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Password="[PwD]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[String.Format(Master(&quot;Subject&quot;).ToString)]" To="[EmailRow(&quot;Customer Email&quot;).ToString]">
               <ui:SendMail.Files>
                 <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4" />
               </ui:SendMail.Files>
@@ -230,6 +230,6 @@
         </ActivityAction>
       </ui:ForEachRow.Body>
     </ui:ForEachRow>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="591.333333333333,58.6666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Invoice &amp; DO Sent Successfully. Please check to ensure it was sent correctly.&quot;]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="589.6,60" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Invoice &amp; DO Sent Successfully. Please check to ensure it was sent correctly.&quot;]" />
   </Sequence>
 </Activity>
